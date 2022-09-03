@@ -1,0 +1,227 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Domestic report</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section class="sub-header">
+      <nav>
+        <a href="index.html"></a>
+          <div class="nav-links" id="navLinks">
+           <i class="fa fa-times" onclick="hideMenu" ></i>
+             <ul>
+               <li><a href="index.html">BLOG</a></li>
+               <li><a href="home.html">HOME</a></li>
+               <li><a href="about.html">ABOUT</a></li>
+               <li><a href="contact.html">CONTACT</a></li>
+               <li><a type="button" class="donatebtn" href="donate.html">DONATE</a></li>
+             </ul>
+           </div>
+           <i class="fa fa-bars"onclick="showMenu" ></i>
+       </nav>
+   </section>
+    <div class="container_donate">
+      <form id="donate" action="">
+        <div class="row">
+          <div class="col">
+            <h3 class="title">billing address</h3>
+
+            <div class="inputBox">
+              <span>Full name:</span>
+              <input type="text" placeholder="clever" id="names" required />
+            </div>
+
+            <div class="inputBox">
+              <span>Email:</span>
+              <input type="email" placeholder="shaka@gmail.com" id="email" required />
+            </div>
+
+            <div class="inputBox">
+              <span>Adress:</span>
+              <input
+                type="text"
+                placeholder="room - street - locality"
+                id="address"
+              />
+            </div>
+
+            <div class="inputBox">
+              <span>City:</span>
+              <input type="text" placeholder="kigali" id="city" required />
+            </div>
+
+            <div class="flex">
+              <div class="inputBox">
+                <span>State:</span>
+                <input type="text" placeholder="Rwanda" id="state" required/>
+              </div>
+
+              <div class="inputBox">
+                <span>Zip code:</span>
+                <input type="text" placeholder="" id="zip_code" value="0000"/>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <h3 class="title">payments</h3>
+
+            <div class="inputBox">
+              <span>Cards accepted:</span>
+              <img src="images/payment4.PNG" alt="" />
+            </div>
+
+            <div class="inputBox">
+              <span>Name on card:</span>
+              <input type="text" placeholder="Clever" required id="oncard_name" />
+            </div>
+
+            <div class="inputBox">
+              <span>Credit card number:</span>
+              <input
+                type="number"
+                placeholder="1111-2222-3333-4444"
+                id="cardnumber"
+                pattern="^(?:4[0-9]{12}(?:[0-9]{3})?|[25][1-7][0-9]{14}|6(?:011|5[0-9][0-9])[0-9]{12}|3[47][0-9]{13}|3(?:0[0-5]|[68][0-9])[0-9]{11}|(?:2131|1800|35\d{3})\d{11})$"
+              required
+                />
+            </div>
+
+            <div class="inputBox">
+              <span>Exp month:</span>
+              <input type="number" placeholder="1" id="exp_month" max="12" min="1" required/>
+            </div>
+
+            <div class="flex">
+              <div class="inputBox">
+                <span>Exp year:</span>
+                <input type="number" placeholder="2022" id="exp_year" min="2022" max="2032" required />
+              </div>
+
+              <div class="inputBox">
+                <span>CVV:</span>
+                <input type="number" placeholder="1234" id="cvv" minlength="2" maxlength="4" />
+              </div>
+            </div>
+            
+            <div class="inputBox">
+              <span>Amount in Rwandan francs:</span>
+              <input type="number" placeholder="20,000" id="amount" min="500" required/>
+            </div>
+          </div>
+        </div>
+        <button type="submit" class="submit-btn">Send your support</button>
+      </form>
+    </div>
+        <!-----Footer -->
+        <footer>
+          <div class="main-content">
+            <div class="left box">
+              <h2>About us</h2>
+              <div class="content">
+                <p>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem,
+                  enim delectus dolorem blanditiis culpa inventore modi doloribus!
+                  Incidunt tempore iusto dolor ut unde corrupti. Fugit ipsum labore
+                  repellendus expedita eveniet.
+                </p>
+                <div class="social">
+                  <a href="#"><span class="fa fa-facebook"></span></a>
+                  <a href="#"><span class="fa fa-twitter"></span></a>
+                  <a href="#"><span class="fa fa-instagram"></span></a>
+                  <a href="#"><span class="fa fa-linkedin"></span></a>
+                  <a href="login.html">Admin</a>
+                </div>
+              </div>
+            </div>
+            <div class="center box">
+              <h2>Address</h2>
+              <div class="content">
+                <div class="place">
+                  <span class="fa fa-map-marker"></span>
+                  <span type="">Kigali,Rwanda</span>
+                </div>
+                <div class="phone">
+                  <span class="fa fa-phone"></span>
+                  <span type="">+250786089349</span>
+                </div>
+                <div class="email">
+                  <span class="fa fa-envelope"></span>
+                  <span type="">shyakae7@gmail.com</span>
+                </div>
+              </div>
+            </div>
+            <div class="right box">
+              <h2>contact us</h2>
+              <div class="content">
+                <form action="#">
+                  <div class="email">
+                    <div class="text">Email*</div>
+                    <input type="email" required />
+                  </div>
+                  <div class="msg">
+                    <div class="text">Message*</div>
+                    <textarea cols="23" rows="2" required></textarea>
+                  </div>
+                  <div class="btn">
+                    <button type="submit" class="hero-btn">Send</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </footer>
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="js/donations.js"></script>
+    <!--JavaScript for toggle menu-->
+    <script>
+      const form = document.querySelector("form#donate");
+
+      const formEvent = form.addEventListener("submit", (event) => {
+        event.preventDefault();
+
+        const names = document.querySelector("#names").value;
+
+        const email = document.querySelector("#email").value;
+
+        const address = document.querySelector("#address").value;
+
+        const city = document.querySelector("#city").value;
+
+        const state = document.querySelector("#state").value;
+
+        const zip_code = document.querySelector("#zip_code").value;
+
+        const oncard_name = document.querySelector("#oncard_name").value;
+
+        const cardnumber = document.querySelector("#cardnumber").value;
+
+        const exp_month = document.querySelector("#exp_month").value;
+
+        const exp_year = document.querySelector("#exp_year").value;
+
+        const amount = document.querySelector("#amount").value;
+
+        const donation = {
+          names,
+          email,
+          address,
+          city,
+          state,
+          zip_code,
+          oncard_name,
+          cardnumber,
+          exp_month,
+          exp_year,
+          amount,
+        };
+        createDonation(donation);
+        form.reset();
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Domestic report</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css"
+    />
+    <link
+      href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <section class="sub-header">
+      <nav>
+        <a href="index.html"> <img src="#" alt="" /></a>
+        <div class="nav-links" id="navLinks">
+          <i class="fa fa-times" onclick="hideMenu"></i>
+          <ul>
+            <li><a href="index.html">BLOG</a></li>
+            <li><a href="home.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+            <li><a type="button" class="donatebtn" href="#">DONATE</a></li>
+          </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu"></i>
+      </nav>
+      <h1>Report case here</h1>
+    </section>
+
+    <!---------contact  us content------>
+
+    <section class="contact-us">
+      <div class="row">
+        <div class="contact-col">
+          <div>
+            <i class="fa fa-home"></i>
+            <span>
+              KKst 145 Airport Road, ABC Building
+              <p>Kanombe ,Nyandungu,IN</p>
+            </span>
+          </div>
+          <div>
+            <i class="fa fa-phone"></i>
+            <span>
+              +(250)786089349
+              <p>Monday to Friday,8AM to 6PM</p>
+            </span>
+          </div>
+          <div>
+            <i class="fa fa-envelope-o"></i>
+            <span>
+              shyakae7@gmail.com
+              <p>Email us for support</p>
+            </span>
+          </div>
+        </div>
+        <div class="contact-col">
+          <form>
+            <input
+              id="names"
+              type="text"
+              name="name"
+              placeholder="Enter your name"
+              required
+            />
+            <input
+              id="phonenumber"
+              type="text"
+              name="phone"
+              placeholder="Enter your phone"
+              required
+            />
+            <input
+              id="email"
+              type="email"
+              name="email"
+              placeholder="Enter your email"
+            />
+            <textarea
+              id="message"
+              rows="8"
+              name="message"
+              placeholder="Message"
+              required
+            ></textarea>
+            <input
+              id="province"
+              type="text"
+              name="province"
+              placeholder="Your province"
+              required
+            />
+            <input
+              id="district"
+              type="text"
+              name="district"
+              placeholder="Enter your district"
+              required
+            />
+            <input
+              id="sector"
+              type="text"
+              name="sector"
+              placeholder="Enter your sector"
+              required
+            />
+            <input
+              id="cell"
+              type="text"
+              name="cell"
+              placeholder="Enter your cell"
+              required
+            />
+            <!-- <input
+        type="text"
+        name="isibo"
+        placeholder="Enter your isibo "
+        required
+      /> -->
+
+            <button type="submit" class="hero-btn red-btn">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-----Footer -->
+    <footer>
+      <div class="main-content">
+       <div class="left box">
+         <h2>About us</h2>
+         <div class="content">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem, enim delectus dolorem blanditiis culpa inventore modi doloribus! Incidunt tempore iusto dolor ut unde corrupti. Fugit ipsum labore repellendus expedita eveniet.</p>
+            <div class="social">
+              <a href="#"><span class="fa fa-facebook"></span></a>
+              <a href="#"><span class="fa fa-twitter"></span></a>
+              <a href="#"><span class="fa fa-instagram"></span></a>
+              <a href="#"><span class="fa fa-linkedin"></span></a>
+              <a href="login.html" >Admin</a>
+              </div>
+            </div>
+          </div>
+          <div class="center box">
+          <h2>Address</h2>
+          <div class="content">
+            <div class="place">
+              <span class="fa fa-map-marker"></span>
+              <span type="">Kigali,Rwanda</span>
+            </div>
+            <div class="phone">
+              <span class="fa fa-phone"></span>
+              <span type="">+250786089349</span>
+            </div>
+            <div class="email">
+              <span class="fa fa-envelope"></span>
+              <span type="">shyakae7@gmail.com</span>
+            </div>
+          </div>
+        </div>
+        <div class="right box">
+    <h2>contact us</h2>
+    <div class="content">
+      <form action="#">
+        <div class="email">
+          <div class="text">Email*</div>
+          <input type="email" required>
+        </div>
+        <div class="msg">
+          <div class="text">Message*</div>
+          <textarea  cols="23" rows="2" required></textarea>
+        </div>
+        <div class="btn">
+          <button type="submit" class="hero-btn">Send</button>
+        </div>
+      </form>
+    </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="js/reports.js"></script>
+    <!--JavaScript for toggle menu-->
+    <script>
+      const form = document.querySelector("form");
+
+      const formEvent = form.addEventListener("submit", (event) => {
+        event.preventDefault();
+
+        const names = document.querySelector("#names").value;
+        const phonenumber = document.querySelector("#phonenumber").value;
+        const email = document.querySelector("#email").value;
+
+        const message = document.querySelector("#message").value;
+
+        const province = document.querySelector("#province").value;
+
+        const district = document.querySelector("#district").value;
+
+        const sector = document.querySelector("#sector").value;
+
+        const cell = document.querySelector("#cell").value;
+
+        const report = {
+          names,
+          phonenumber,
+          email,
+          message,
+          province,
+          district,
+          sector,
+          cell,
+        };
+        createReport(report);
+        form.reset();
+      });
+    </script>
+    <script>
+      var navLinks = document.getElementById("navLinks");
+      function showMenu() {
+        navLinks.style.right = "0";
+      }
+      function hideMenu() {
+        navLinks.style.right = "-200px";
+      }
+    </script>
+  </body>
+</html>

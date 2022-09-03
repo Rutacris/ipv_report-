@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Domestic report</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css"
+    />
+    <link
+      href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <section class="sub-header">
+      <nav>
+        <a href="index.html"> <img src="#" alt="" /></a>
+        <div class="nav-links" id="navLinks">
+          <i class="fa fa-times" onclick="hideMenu"></i>
+          <ul>
+            <li><a href="index.html">BLOG</a></li>
+            <li><a href="home.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+            <li><a type="button" class="donatebtn" href="donate.html">DONATE</a></li>
+          </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu"></i>
+      </nav>
+      <h1>contact Us</h1>
+    </section>
+
+    <!---------contact  us content------>
+
+    <section class="location">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15949.811842772055!2d30.086944616323496!3d-1.9730183319033405!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x19dca62d5ccf73a5%3A0x85be08f36aff91dd!2sKicukiro%2C%20Kigali!5e0!3m2!1sen!2srw!4v1655966139501!5m2!1sen!2srw"
+        width="600"
+        height="450"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </section>
+    <section class="contact-us">
+      <div class="row">
+        <div class="contact-col">
+          <div>
+            <i class="fa fa-home"></i>
+            <span>
+              KKst 145 Airport Road, ABC Building
+              <p>Kanombe ,Nyandungu,IN</p>
+            </span>
+          </div>
+          <div>
+            <i class="fa fa-phone"></i>
+            <span>
+              +(250)786089349
+              <p>Monday to Friday,8AM to 6PM</p>
+            </span>
+          </div>
+          <div>
+            <i class="fa fa-envelope-o"></i>
+            <span>
+              shyakae7@gmail.com
+              <p>Email us for support</p>
+            </span>
+          </div>
+        </div>
+        <div class="contact-col">
+          <form action="form-handler.php" method="post">
+            <input
+            id="names"
+              type="text"
+              name="name"
+              placeholder="Enter your name"
+              required
+            />
+            <input
+            id="email"
+              type="email"
+              name="email"
+              placeholder="Enter Email Address"
+              required
+            />
+            <input
+            id="subject"
+              type="text"
+              name="subject"
+              placeholder="Enter your Subject"
+              required
+            />
+            <textarea
+            id="message"
+              rows="8"
+              name="message"
+              placeholder="Message"
+              required
+            ></textarea>
+            <button type="submit" class="hero-btn red-btn">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-----Footer -->
+    <footer>
+      <div class="main-content">
+        <div class="left box">
+          <h2>About us</h2>
+          <div class="content">
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem,
+              enim delectus dolorem blanditiis culpa inventore modi doloribus!
+              Incidunt tempore iusto dolor ut unde corrupti. Fugit ipsum labore
+              repellendus expedita eveniet.
+            </p>
+            <div class="social">
+              <a href="#"><span class="fa fa-facebook"></span></a>
+              <a href="#"><span class="fa fa-twitter"></span></a>
+              <a href="#"><span class="fa fa-instagram"></span></a>
+              <a href="#"><span class="fa fa-linkedin"></span></a>
+              <a href="login.html">Admin</a>
+            </div>
+          </div>
+        </div>
+        <div class="center box">
+          <h2>Address</h2>
+          <div class="content">
+            <div class="place">
+              <span class="fa fa-map-marker"></span>
+              <span type="">Kigali,Rwanda</span>
+            </div>
+            <div class="phone">
+              <span class="fa fa-phone"></span>
+              <span type="">+250786089349</span>
+            </div>
+            <div class="email">
+              <span class="fa fa-envelope"></span>
+              <span type="">shyakae7@gmail.com</span>
+            </div>
+          </div>
+        </div>
+        <div class="right box">
+          <h2>contact us</h2>
+          <div class="content">
+            <form action="#">
+              <div class="email">
+                <div class="text">Email*</div>
+                <input type="email" required />
+              </div>
+              <div class="msg">
+                <div class="text">Message*</div>
+                <textarea cols="23" rows="2" required></textarea>
+              </div>
+              <div class="btn">
+                <button type="submit" class="hero-btn">Send</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="js/suggestions.js"></script>
+
+    <script>
+      const form = document.querySelector("form");
+
+      const formEvent = form.addEventListener("submit", (event) => {
+        event.preventDefault();
+
+        const names = document.querySelector("#names").value;
+        const email = document.querySelector("#email").value;
+       
+
+        const subject = document.querySelector("#subject").value;
+
+        const message = document.querySelector("#subject").value;
+
+
+        const suggestion= {
+          names,
+          email,
+          subject,
+          message,
+        };
+        createSuggestion(suggestion);
+        form.reset();
+      });
+    </script>
+    <!--JavaScript for toggle menu-->
+    <script>
+      var navLinks = document.getElementById("navLinks");
+      function showMenu() {
+        navLinks.style.right = "0";
+      }
+      function hideMenu() {
+        navLinks.style.right = "-200px";
+      }
+    </script>
+  </body>
+</html>
