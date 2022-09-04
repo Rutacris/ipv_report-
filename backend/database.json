@@ -1,0 +1,157 @@
+{
+    "users": [
+      {
+        "id": 1,
+        "first_name": "Robert",
+        "last_name": "Schwartz",
+        "email": "rob23@gmail.com",
+        "password": "123"
+      }
+    ],
+    "reports": [
+      {
+        "id": 1,
+        "names": "Robert",
+        "phone": "gfhfh",
+        "email": "rob23@gmail.com",
+        "message": "123",
+        "province": "123",
+        "district": "123",
+        "sector": "123",
+        "cell": "123"
+      },
+      {
+        "names": "dfgfdfg",
+        "phonenumber": "dfgd",
+        "email": "dfg@fgs.sdfs",
+        "message": "sdfsdsdf",
+        "province": "sdfs",
+        "district": "sdfsd",
+        "sector": "sdfsdsf",
+        "cell": "sdfsd",
+        "id": 2
+      },
+      {
+        "names": "SHYAKA EUGENE",
+        "phonenumber": "0783907364",
+        "email": "shyakae7@gmail.com",
+        "message": "i hvsbsibvioaboivb",
+        "province": "avjbajkjavjhva",
+        "district": "ufagofugaofa",
+        "sector": "bjhavbaibova",
+        "cell": "fguaofggaufga",
+        "id": 3
+      }
+    ],
+    "suggestions": [
+      {
+        "id": 1,
+        "names": "Robert",
+        "email": "rob23@gmail.com",
+        "subject": "Schwartz",
+        "message": "123"
+      },
+      {
+        "names": "gfhg",
+        "email": "shyakae7@gmail.com",
+        "subject": "gfgh",
+        "message": "gfgh",
+        "id": 2
+      },
+      {
+        "names": "shyaka eugene",
+        "email": "shyakae7@gmail.com",
+        "subject": "come",
+        "message": "come",
+        "id": 3
+      }
+    ],
+    "donations": [
+      {
+        "id": 1,
+        "first_name": "Robert",
+        "last_name": "Schwartz",
+        "email": "rob23@gmail.com",
+        "amount": "689758768",
+        "donated_on": "2022-05-02",
+        "password": "123"
+      },
+      {
+        "names": "chris",
+        "email": "chris@gmail.com",
+        "address": "kanombe",
+        "city": "kigali",
+        "state": "rwanda",
+        "zip_code": "0000",
+        "oncard_name": "stdsst",
+        "cardnumber": "5766545656",
+        "exp_month": "jan",
+        "exp_year": "2022",
+        "amount": "689758768",
+        "donated_on": "2022-05-02",
+        "id": 2
+      },
+      {
+        "names": "SHYAKA EUGENE",
+        "email": "shyakae7@gmail.com",
+        "address": "KANOMBE",
+        "city": "KIGALI",
+        "state": "",
+        "zip_code": "0000",
+        "oncard_name": "Beni",
+        "cardnumber": "976865675646746",
+        "exp_month": "september",
+        "exp_year": "2023",
+        "amount": "340000",
+        "date": "2022-05-02",
+        "donated_on": "2022-05-02",
+        "id": 3
+      },
+      {
+        "names": "Beni chris ",
+        "email": "chris@gmail.com",
+        "address": "kanombe",
+        "city": "kigali",
+        "state": "united states ",
+        "zip_code": "0000",
+        "oncard_name": "iradukunda",
+        "cardnumber": "6747868795676",
+        "exp_month": "jan",
+        "exp_year": "2024",
+        "amount": "8000000",
+        
+        "donated_on": "2022-05-02",
+        "id": 4
+      },
+      {
+        "names": "chris",
+        "email": "chris@gmail.com",
+        "address": "kanombe",
+        "city": "kigali",
+        "state": "rwanda",
+        "zip_code": "0000",
+        "oncard_name": "Beni",
+        "cardnumber": "1111111111111111111111111111093930930933",
+        "exp_month": "jannnnn93n3n0n3",
+        "exp_year": "200000",
+        "amount": "43353453",
+        
+        "donated_on": "2022-05-02",
+        "id": 5
+      }
+    ],
+    "comments": [
+      {
+        "id": 1,
+        "names": "Robert",
+        "email": "Schwartz",
+        "message": "rob23@gmail.com"
+      },
+      {
+        "names": "shyaka eugene",
+        "email": "shyakae7@gmail.com",
+        "message": " yuuyyyjti",
+        "id": 2
+      }
+    ]
+  }
