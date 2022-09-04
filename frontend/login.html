@@ -47,28 +47,49 @@
 <h1>login Here</h1>
 <form action="">
   <p>USer Email</p>
-  <input type="email" name="" placeholder="Enter your Email">
+  <input type="email" id="email" placeholder="Enter your Email" />
   <p>password</p>
-    <input type="password"  name=""  placeholder="Enter password">
-    <input type="submit" name="" value="login" >
-  <a href="#">Forgot your password?</a> <br>
-  <a href="#">Don't have an account?</a>
+  <input type="password" id="password" placeholder="Enter password" />
+  <input type="submit" name="" value="login" />
 </form>
   </div>
 
     <!-----Footer -->
 
      
+ <!-----Footer -->
+ <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+ <script src="js/auth.js"></script>
+ <!--JavaScript for toggle menu-->
+ <script>
+   const form = document.querySelector("form");
 
-    <!--JavaScript for toggle menu-->
-    <script>
-      var navLinks = document.getElementById("navLinks");
-      function showMenu() {
-        navLinks.style.right = "0";
-      }
-      function hideMenu() {
-        navLinks.style.right = "-200px";
-      }
-    </script>
+   const formEvent = form.addEventListener("submit", (event) => {
+     event.preventDefault();
+
+     const email = document.querySelector("#email").value;
+     const password = document.querySelector("#password").value;
+  
+
+     const creds = {
+       email,
+       password,
+     };
+     form.reset();
+     login(creds);
+     
+   });
+ </script>
+
+ <!--JavaScript for toggle menu-->
+ <script>
+   var navLinks = document.getElementById("navLinks");
+   function showMenu() {
+     navLinks.style.right = "0";
+   }
+   function hideMenu() {
+     navLinks.style.right = "-200px";
+   }
+ </script>
   </body>
 </html>

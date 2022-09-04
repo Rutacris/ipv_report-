@@ -175,53 +175,53 @@
           </div>
         </footer>
 
-    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-    <script src="js/donations.js"></script>
-    <!--JavaScript for toggle menu-->
-    <script>
-      const form = document.querySelector("form#donate");
-
-      const formEvent = form.addEventListener("submit", (event) => {
-        event.preventDefault();
-
-        const names = document.querySelector("#names").value;
-
-        const email = document.querySelector("#email").value;
-
-        const address = document.querySelector("#address").value;
-
-        const city = document.querySelector("#city").value;
-
-        const state = document.querySelector("#state").value;
-
-        const zip_code = document.querySelector("#zip_code").value;
-
-        const oncard_name = document.querySelector("#oncard_name").value;
-
-        const cardnumber = document.querySelector("#cardnumber").value;
-
-        const exp_month = document.querySelector("#exp_month").value;
-
-        const exp_year = document.querySelector("#exp_year").value;
-
-        const amount = document.querySelector("#amount").value;
-
-        const donation = {
-          names,
-          email,
-          address,
-          city,
-          state,
-          zip_code,
-          oncard_name,
-          cardnumber,
-          exp_month,
-          exp_year,
-          amount,
-        };
-        createDonation(donation);
-        form.reset();
-      });
-    </script>
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+        <script src="js/donations.js"></script>
+        <!--JavaScript for toggle menu-->
+        <script>
+          const form = document.querySelector("form#donate");
+    
+          const formEvent = form.addEventListener("submit", (event) => {
+            event.preventDefault();
+    
+            const names = document.querySelector("#names").value;
+    
+            const email = document.querySelector("#email").value;
+    
+            const address = document.querySelector("#address").value;
+    
+            const city = document.querySelector("#city").value;
+    
+            const state = document.querySelector("#state").value;
+    
+            const zip_code = document.querySelector("#zip_code").value;
+    
+            const oncard_name = document.querySelector("#oncard_name").value;
+    
+            const cardnumber = document.querySelector("#cardnumber").value;
+    
+            const exp_month = document.querySelector("#exp_month").value;
+    
+            const exp_year = document.querySelector("#exp_year").value;
+    
+            const amount = document.querySelector("#amount").value;
+    
+            const donation = {
+              names,
+              email,
+              address,
+              city,
+              state,
+              zip_code,
+              oncard_name,
+              cardnumber,
+              exp_month,
+              exp_year,
+              amount,
+            };
+            createDonation(donation);
+            form.reset();
+          });
+        </script>
   </body>
 </html>

@@ -4,9 +4,24 @@
     <title>Domestic report</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="admin/css.css" />
+    <link rel="stylesheet" href="css.css" />
   </head>
-  <body>
+  <body onload="checkAuth()">
+     <!-- The Modal -->
+     <div id="myModal" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <div class="modal-header">
+          <span class="close">&times;</span>
+          <h2>Suggestion</h2>
+        </div>
+        <div id="modal-data" class="modal-body"></div>
+
+        <div class="modal-footer">
+          <h3></h3>
+        </div>
+      </div>
+    </div>
     <header class="page-header">
       <nav>
         <h1>My dashboard</h1>
@@ -32,7 +47,7 @@
             </a>
           </li>
           <li>
-            <a href="admin/comments.html">
+            <a href="comments.html">
               <svg>
                 <use xlink:href="#users"></use>
               </svg>
@@ -40,7 +55,7 @@
             </a>
           </li>
           <li>
-            <a href="admin/donations.html">
+            <a href="donations.html">
               <svg>
                 <use xlink:href="#trends"></use>
               </svg>
@@ -48,16 +63,15 @@
             </a>
           </li>
           <li>
-            <a href="admin/suggestions.html">
+            <a href="suggestions.html">
               <svg>
                 <use xlink:href="#collection"></use>
               </svg>
               <span>Suggestions</span>
             </a>
           </li>
-          
           <li>
-            <a href="admin/users.html">
+            <a href="users.html">
               <svg>
                 <use xlink:href="#comments"></use>
               </svg>
@@ -65,13 +79,13 @@
             </a>
           </li>
           <li>
-            <a href="#0">
+           <!---- <a href="#0">
               <svg>
                 <use xlink:href="#appearance"></use>
               </svg>
               <span></span>
             </a>
-          </li>
+          </li> -->
           <li class="menu-heading">
             <h3>Settings</h3>
           </li>
@@ -124,41 +138,43 @@
     <section class="page-content">
       <section class="search-and-user">
         <div class="admin-profile">
-          <span class="greeting">Hello admin</span>
-          <div class="notifications">
-            <span class="badge">1</span>
-            <svg>
-              <use xlink:href="#users"></use>
-            </svg>
-          </div>
+          <h2 class="greeting">Hello admin</h2>
+          <a type="button" onclick="logout()">Sign out</a>
+          
         </div>
       </section>
       <section class="grid">
         <article>
           <table>
-            <tr>
-              <th>N0</th>
-              <th>Email</th>
-              <th>Phone</th>
-              <th>District</th>
-              <th>Sector</th>
-              <th>Action</th>
-            </tr>
-            <tr>
-              <td>1</td>
-              <td>s@email.com</td>
-              <td>0786653152</td>
-              
-              <td>Kicukiro</td>
-              
-              <td>Nyarugubga</td>
-              
-              <td><a href="view">View</a></td>
-            </tr>
-           
+            <thead>
+              <tr>
+                <th>N0</th>
+                <th>Names</th>
+                <th>Email</th>
+                <th>Subject</th>
+                <th>Action</th>
+              </tr>
+            </thead>
+            <tbody id="table_body"></tbody>
           </table>
         </article>
+      </section>
+      
     </section>
-    <script src="admin/js.js"></script>
+    <script src="js.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="/js/suggestions.js"></script>
+    <script>
+      fetchSuggestions();
+    </script>
+    <script>
+      function checkAuth() {
+        const isauthenticated = window.localStorage.getItem(`access_token`);
+
+        if (!isauthenticated) {
+          window.location.href = "login.html";
+        }
+      }
+    </script>
   </body>
 </html>

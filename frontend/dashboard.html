@@ -4,9 +4,24 @@
     <title>Domestic report</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css.css" />
+    <link rel="stylesheet" href="admin/css.css" />
   </head>
-  <body>
+  <body onload="checkAuth()">
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <div class="modal-header">
+          <span class="close">&times;</span>
+          <h2>Report</h2>
+        </div>
+        <div id="modal-data" class="modal-body"></div>
+
+        <div class="modal-footer">
+          <h3></h3>
+        </div>
+      </div>
+    </div>
     <header class="page-header">
       <nav>
         <h1>My dashboard</h1>
@@ -24,7 +39,7 @@
             <h3>Admin</h3>
           </li>
           <li>
-            <a href="/dashboard.html">
+            <a href="#">
               <svg>
                 <use xlink:href="#pages"></use>
               </svg>
@@ -32,7 +47,7 @@
             </a>
           </li>
           <li>
-            <a href="comments.html">
+            <a href="admin/comments.html">
               <svg>
                 <use xlink:href="#users"></use>
               </svg>
@@ -40,7 +55,7 @@
             </a>
           </li>
           <li>
-            <a href="donations.html">
+            <a href="admin/donations.html">
               <svg>
                 <use xlink:href="#trends"></use>
               </svg>
@@ -48,15 +63,16 @@
             </a>
           </li>
           <li>
-            <a href="suggestions.html">
+            <a href="admin/suggestions.html">
               <svg>
                 <use xlink:href="#collection"></use>
               </svg>
               <span>Suggestions</span>
             </a>
           </li>
+          
           <li>
-            <a href="users.html">
+            <a href="admin/users.html">
               <svg>
                 <use xlink:href="#comments"></use>
               </svg>
@@ -123,32 +139,45 @@
     <section class="page-content">
       <section class="search-and-user">
         <div class="admin-profile">
-          <span class="greeting">Hello admin</span>
-          <div class="notifications">
-            <span class="badge">1</span>
-            <svg>
-              <use xlink:href="#users"></use>
-            </svg>
-          </div>
+          <h2 class="greeting">Hello admin</h2>
+          <a type="button" onclick="logout()">Sign out</a>
         </div>
       </section>
       <section class="grid">
         <article>
           <table>
-            <tr>
-              <th>N0</th>
-              <th>Email</th>
-              <th>Phone</th>
-              <th>District</th>
-              <th>Sector</th>
-              <th>Action</th>
-            </tr>
-           
+            <thead>
+              <tr>
+                <th>N0</th>
+                <th>Email</th>
+                <th>Phone</th>
+                <th>District</th>
+                <th>Sector</th>
+                <th>Action</th>
+              </tr>
+            </thead>
+            <tbody id="table_body"></tbody>
           </table>
         </article>
-      </section>
-      
     </section>
-    <script src="js.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="admin/js.js"></script>
+    <script src="js/reports.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+
+    <script>
+      fetchReports();
+    </script>
+    <script>
+      function checkAuth() {
+        const isauthenticated = window.localStorage.getItem(`access_token`);
+
+        if (!isauthenticated) {
+          window.location.href = "/login.html";
+        }
+      }
+
+    
+    </script>
   </body>
 </html>
