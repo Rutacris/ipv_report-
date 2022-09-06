@@ -29,9 +29,9 @@ const fetchComments = () => {
       });
   };
   
-  const createComment = (comment) => {
+  const createComment = (comment,guest="") => {
     axios
-      .post(`http://localhost:3000/comments`, comment)
+      .post(`http://localhost:3000/comments${user === 'guest' ? '?guest=true':''}`, comment)
       .then((response) => {
         const addedComments = response.data;
         console.log(`POST: comment added`, addedComments);

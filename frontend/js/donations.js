@@ -30,9 +30,9 @@ const fetchDonations = () => {
       });
   };
   
-  const createDonation = (donation) => {
+  const createDonation = (donation, guest="") => {
     axios
-      .post(`http://localhost:3000/donations`, donation)
+      .post(`http://localhost:3000/donations${user === 'guest' ? '?guest=true':''}`, donation)
       .then((response) => {
         const addedDonations = response.data;
         console.log(`POST: Donation recieved`, addedDonations);

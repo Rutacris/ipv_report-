@@ -30,9 +30,9 @@ const fetchReports = async () => {
       });
   };
   
-  const createReport = (report) => {
+  const createReport = (report, user = "") => {
     axios
-      .post(`http://localhost:3000/reports`, report)
+      .post(`http://localhost:3000/reports${user === 'guest' ? '?guest=true':''}`, report)
       .then((response) => {
         const addedReports = response.data;
         console.log(`POST: report is added`, addedReports);
