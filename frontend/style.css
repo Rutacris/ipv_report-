@@ -731,5 +731,27 @@ footer {
   background: #f44336;
   
 }
+/*----  toll free---*/
+
+.flex-box{
+  display:flex;
+  position: flex;
+  background-color:rgba(93, 93, 124, 0.089);
+  width: 100%;
+  padding: 3%;
+}
+.flex-box h2{
+  margin: auto;
+   }
+   
+ 
+  .flex-box .our-toolfree .container-left  p{
+
+font-size: medium;
+font-weight: 300;
+margin: auto;
+color: #525061;
+padding: 0%;
+ }
 
 

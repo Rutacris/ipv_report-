@@ -10,3 +10,4 @@ FRONTEND
 
 1. Run the HTML files.
 2. Make sure you have internet connection because there are some packages that are online. For example: Axios
+  
