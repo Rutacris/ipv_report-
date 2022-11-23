@@ -1,21 +1,16 @@
-const fetchComments = () => {
+const fetchContacts = () => {
     axios
-      .get("http://localhost:3000/comments", {
+      .get("http://localhost:3000/smscontact", {
         headers: { Authorization: `Bearer ${getToken()}` },
       })
       .then((response) => {
-        const comments = response.data;
+        const sms = response.data;
         let html_ = "<tr>";
-        Object.keys(comments).forEach(function (value, key) {
+        Object.keys(sms).forEach(function (value, key) {
           html_ += "<tr>";
           html_ += "<td>" + (key + 1) + "</td>";
           html_ += "<td>" + comments[value].names + "</td>";
-          html_ += "<td>" + comments[value].email + "</td>";
-          html_ += "<td>" + comments[value].message.slice(0, 20) + "</td>";
-          html_ +=
-          "<td> <a type='button' style='cursor:pointer;' onclick='fetchComment(" +
-          comments[value].id +
-          ")'>Read</a></td>";
+          html_ += "<td>" + comments[value].phonenumber + "</td>";
           html_ += "</tr>";
         });
         document.getElementById("table_body").innerHTML = html_;
@@ -29,35 +24,33 @@ const fetchComments = () => {
       });
   };
   
-  const createComment = (comment,user="") => {
+  const createSms = (contact,user="") => {
     axios
-      .post(`http://localhost:3000/comments${user === 'guest' ? '?guest=true':''}`, comment)
+      .post(`http://localhost:3000/smscontact${user === 'guest' ? '?guest=true':''}`, contact)
       .then((response) => {
-        const addedComments = response.data;
-        console.log(`POST: comment added`, addedComments);
+        const addedContacts = response.data;
+        console.log(`POST: SMS contact added`, addedContacts);
         // append to DOM
         // appendToDOM([addedReports]);
-        alert("Thank you for your comment!!");
+        alert("Thank you for subscribing!!");
       })
       .catch((error) => console.error(error));
   };
-  const deleteComment = (elem, id) => {
+  const deleteContact = (elem, id) => {
     axios
-      .delete(`http://localhost:3000/comments/${id}`)
+      .delete(`http://localhost:3000/smscontact/${id}`)
       .then((response) => {
-        console.log(`DELETE: comment  removed`, id);
+        console.log(`DELETE: sms contact  removed`, id);
         // remove elem from DOM
         elem.remove();
       })
       .catch((error) => console.error(error));
   };
   
-  const updateComment = (elem, id) => {
+  const updateContact = (elem, id) => {
     axios
-      .put("http://localhost:3000/comment/6/", {
-        first_name: "Fred",
-        last_name: "Blair",
-        email: "freddyb34@yahoo.com",
+      .put(`http://localhost:3000/smscontact/${id}`, {
+        elem
       })
       .then((resp) => {
         console.log(resp.data);
@@ -72,9 +65,9 @@ const fetchComments = () => {
   };
   
   
-  const fetchComment = async (id) => {
+  const fetchContact = async (id) => {
     await axios
-      .get("http://localhost:3000/comments/" + id, {
+      .get("http://localhost:3000/smscontact/" + id, {
         headers: { Authorization: `Bearer ${getToken()}` },
       })
       .then((response) => {
@@ -126,43 +119,4 @@ const fetchComments = () => {
       });
   };
   
-  
-  const sendEmail = async (to, subject, body) => {
-    await axios
-      .post(
-        "http://localhost:3000/mail/send",
-        { to: to, subject: subject, body: body },
-        {
-          headers: {
-            "content-type": "application/json",
-            Authorization: `Bearer ${getToken()}`,
-          },
-        }
-      )
-      .then((response) => {
-        if (response.status === 200) {
-          document.getElementById("message_").value = "";
-          alert("Email sent successfully");
-        }
-      })
-      .catch((error) => {
-        if (error.response) {
-          if (error.response.status === 401) {
-            window.location.href = "/login.html";
-          }
-          if (error.response.status === 500) {
-            alert(
-              "Error occured, try again in a few minutes",
-              error.response.message
-            );
-          }
-        }
-      });
-  };
-  
-  const submit_report = () => {
-    const forward_to = document.getElementById("forward_email").value;
-    const forward_body = document.getElementById("message_").value;
-    const forward_subject = "Comment";
-    sendEmail(forward_to, forward_subject, forward_body);
-  };
+ 

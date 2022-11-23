@@ -81,6 +81,189 @@
             </a>
           </li>
           <li>
+           <!---- <a href="#0">
+              <svg>
+                <use xlink:href="#appearance"></use>
+              </svg>
+              <span></span>
+            </a>
+          </li> -->
+          <li class="menu-heading">
+            <h3>Settings</h3>
+          </li>
+          <li>
+            <a href="#0">
+              <svg>
+                <use xlink:href="#settings"></use>
+              </svg>
+              <span>Settings</span>
+            </a>
+          </li>
+          <li>
+            <a href="#0">
+              <svg>
+                <use xlink:href="#options"></use>
+              </svg>
+              <span>Options</span>
+            </a>
+          </li>
+          <li>
+            <a href="#0">
+              <svg>
+                <use xlink:href="#charts"></use>
+              </svg>
+              <span>Charts</span>
+            </a>
+          </li>
+          <li>
+            <div class="switch">
+              <input type="checkbox" id="mode" checked />
+              <label for="mode">
+                <span></span>
+                <span>Dark</span>
+              </label>
+            </div>
+            <button
+              class="collapse-btn"
+              aria-expanded="true"
+              aria-label="collapse menu"
+            >
+              <svg aria-hidden="true">
+                <use xlink:href="#collapse"></use>
+              </svg>
+              <span>Collapse</span>
+            </button>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <section class="page-content">
+      <section class="search-and-user">
+        <div class="admin-profile">
+          <span class="greeting">Hello admin</span>
+          <a type="button" onclick="logout()">Sign out</a>
+          
+        </div>
+      </section>
+      <section class="grid">
+        <article>
+          <table>
+            <thead>
+              <tr>
+                <th>N0</th>
+                <th>Names</th>
+                <th>Email</th>
+                <th>Message</th>
+                <th>Action</th>
+              </tr>
+            </thead>
+            <tbody id="table_body">
+              
+            </tbody>
+          </table>
+        </article>
+     </section>
+     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="./js.js"></script>
+    <script src="./../js/comments.js"></script>
+
+    <script>
+      fetchComments();
+
+    </script>
+    <script>
+      function checkAuth() {
+        const isauthenticated = window.localStorage.getItem(`access_token`);
+
+        if (!isauthenticated) {
+          window.location.href = "/frontend/login.html";
+        }
+      }
+    </script>
+  </body>
+</html><html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Domestic report</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css.css" />
+  </head>
+  <body onload="checkAuth()">
+     <!-- The Modal -->
+     <div id="myModal" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <div class="modal-header">
+          <span class="close">&times;</span>
+          <h2>Comment</h2>
+        </div>
+        <div id="modal-data" class="modal-body">
+          
+        </div>
+        
+        <div class="modal-footer">
+          <h3></h3>
+        </div>
+      </div>
+    </div>
+    <header class="page-header">
+      <nav>
+        <h1>My dashboard</h1>
+        <button
+          class="toggle-mob-menu"
+          aria-expanded="false"
+          aria-label="open menu"
+        >
+          <svg width="20" height="20" aria-hidden="true">
+            <use xlink:href="#down"></use>
+          </svg>
+        </button>
+        <ul class="admin-menu">
+          <li class="menu-heading">
+            <h3>Admin</h3>
+          </li>
+          <li>
+            <a href="../dashboard.html">
+              <svg>
+                <use xlink:href="#pages"></use>
+              </svg>
+              <span>Reports</span>
+            </a>
+          </li>
+          <li>
+            <a href="comments.html">
+              <svg>
+                <use xlink:href="#users"></use>
+              </svg>
+              <span>Comments</span>
+            </a>
+          </li>
+          <li>
+            <a href="donations.html">
+              <svg>
+                <use xlink:href="#trends"></use>
+              </svg>
+              <span>Donations</span>
+            </a>
+          </li>
+          <li>
+            <a href="suggestions.html">
+              <svg>
+                <use xlink:href="#collection"></use>
+              </svg>
+              <span>Suggestions</span>
+            </a>
+          </li>
+          <li>
+            <a href="users.html">
+              <svg>
+                <use xlink:href="#comments"></use>
+              </svg>
+              <span>Users</span>
+            </a>
+          </li>
+          <li>
             
             <a href="sms.html">
               <svg>

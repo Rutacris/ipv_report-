@@ -3,7 +3,7 @@
     {
       "id": 1,
       "first_name": "Robert",
-      "last_name": "Schwartz",
+      "last_name": "dan",
       "email": "rob23@gmail.com",
       "password": "123"
     }
@@ -12,46 +12,35 @@
     {
       "id": 1,
       "names": "Robert",
-      "phone": "gfhfh",
+      "phone": "078655467",
       "email": "rob23@gmail.com",
-      "message": "123",
-      "province": "123",
-      "district": "123",
-      "sector": "123",
-      "cell": "123"
-    },
-    {
-      "names": "dfgfdfg",
-      "phonenumber": "dfgd",
-      "email": "dfg@fgs.sdfs",
-      "message": "sdfsdsdf",
-      "province": "sdfs",
-      "district": "sdfsd",
-      "sector": "sdfsdsf",
-      "cell": "sdfsd",
-      "id": 2
-    },
-    {
-      "names": "SHYAKA EUGENE",
-      "phonenumber": "0783907364",
-      "email": "shyakae7@gmail.com",
-      "message": "i hvsbsibvioaboivb",
-      "province": "avjbajkjavjhva",
-      "district": "ufagofugaofa",
-      "sector": "bjhavbaibova",
-      "cell": "fguaofggaufga",
-      "id": 3
+      "message": "my husband is treating badly now days",
+      "province": "kigali",
+      "district": "gasabo",
+      "sector": "kimihurura",
+      "cell": "bwiza"
     },
     {
       "names": "Christian Rutayisire",
       "phonenumber": "0786653152",
       "email": "rutacris21@gmail.com",
-      "message": "report of people",
+      "message": "please use my number to reach me",
       "province": "Kigali",
       "district": "Kicukiro",
       "sector": "Nyarugenge",
-      "cell": "Seman",
+      "cell": "nyarugenge",
       "id": 4
+    },
+    {
+      "names": "shyaka eugene",
+      "phonenumber": "0786089349",
+      "email": "shyakae7@gmail.com",
+      "message": "please am having troubles with my girls what should I do",
+      "province": "kigali",
+      "district": "kicukiro",
+      "sector": "nyandungu",
+      "cell": "Nyaragunga",
+      "id": 5
     }
   ],
   "suggestions": [
@@ -59,29 +48,64 @@
       "id": 1,
       "names": "Robert",
       "email": "rob23@gmail.com",
-      "subject": "Schwartz",
-      "message": "123"
-    },
-    {
-      "names": "gfhg",
-      "email": "shyakae7@gmail.com",
-      "subject": "gfgh",
-      "message": "gfgh",
-      "id": 2
+      "subject": "where",
+      "message": "would you have offices all over the Country"
     },
     {
       "names": "shyaka eugene",
       "email": "shyakae7@gmail.com",
-      "subject": "come",
-      "message": "come",
+      "subject": "Mind",
+      "message": "that i dea was cool look  for government support guys",
       "id": 3
+    },
+    {
+      "names": "clever ",
+      "email": "clever@gmail.com",
+      "subject": "come",
+      "message": "your welcome guys its is amazing we love you",
+      "id": 4
+    },
+    {
+      "names": "danison",
+      "email": "dan@gmail.com",
+      "subject": "what is",
+      "message": "how do you define domestic violance in your context",
+      "id": 5
+    },
+    {
+      "names": "SHYAKA EUGENE",
+      "email": "shyakae7@gmail.com",
+      "subject": "wooohoo",
+      "message": "brothers please do more its perfect",
+      "id": 6
+    },
+    {
+      "names": "denzel ",
+      "email": "deniz@gmail.com",
+      "subject": "ADD",
+      "message": "ADD",
+      "id": 8
+    },
+    {
+      "names": "rugema ",
+      "email": "rugema@gmail.com",
+      "subject": "Update",
+      "message": "Update",
+      "id": 9
+    },
+    {
+      "names": "alpha",
+      "email": "alpha@gmail.com",
+      "subject": "wowww",
+      "message": "Thanks you brother this is too rational",
+      "id": 10
     }
   ],
   "donations": [
     {
       "id": 1,
       "first_name": "Robert",
-      "last_name": "Schwartz",
+      "last_name": "Sam",
       "email": "rob23@gmail.com",
       "amount": "689758768",
       "donated_on": "2022-05-02",
@@ -103,8 +127,8 @@
       "id": 2
     },
     {
-      "names": "SHYAKA EUGENE",
-      "email": "shyakae7@gmail.com",
+      "names": "fred",
+      "email": "fred@gmail.com",
       "address": "KANOMBE",
       "city": "KIGALI",
       "state": "",
@@ -141,26 +165,165 @@
       "state": "rwanda",
       "zip_code": "0000",
       "oncard_name": "Beni",
-      "cardnumber": "1111111111111111111111111111093930930933",
-      "exp_month": "jannnnn93n3n0n3",
+      "cardnumber": "1166895674789008",
+      "exp_month": "jan",
       "exp_year": "200000",
-      "amount": "43353453",
+      "amount": "4335",
       "donated_on": "2022-05-02",
       "id": 5
+    },
+    {
+      "names": "blessings",
+      "email": "blessings@gmail.com",
+      "address": "KIMIRONKO",
+      "city": "kigali",
+      "state": "US",
+      "zip_code": "0000",
+      "oncard_name": "Beni",
+      "cardnumber": "78656756464",
+      "exp_month": "5",
+      "exp_year": "2023",
+      "amount": "7000",
+      "id": 6
+    },
+    {
+      "names": "shema",
+      "email": "shema@gmail.com",
+      "address": "kanombe",
+      "city": "kigali",
+      "state": "rwanda",
+      "zip_code": "0000",
+      "oncard_name": "shema",
+      "cardnumber": "133343",
+      "exp_month": "2",
+      "exp_year": "2022",
+      "amount": "10000",
+      "id": 7
+    },
+    {
+      "names": "suarez",
+      "email": "suarez@gmail.com",
+      "address": "kimihurura",
+      "city": "kigali",
+      "state": "Rwanda",
+      "zip_code": "0000",
+      "oncard_name": "surez",
+      "cardnumber": "541584719415671",
+      "exp_month": "2",
+      "exp_year": "2022",
+      "amount": "800000",
+      "id": 8
+    },
+    {
+      "names": "Ayebare ",
+      "email": "ayebabare002@gmail.com",
+      "address": "kanombe",
+      "city": "kigali",
+      "state": "Rwanda",
+      "zip_code": "0000",
+      "oncard_name": "alphonse",
+      "cardnumber": "98666866876866",
+      "exp_month": "2",
+      "exp_year": "2023",
+      "amount": "600009",
+      "id": 9
+    },
+    {
+      "names": "mercy",
+      "email": "mercy@gmail.com",
+      "address": "kakiru",
+      "city": "kigali",
+      "state": "rwanda",
+      "zip_code": "0000",
+      "oncard_name": "mercy",
+      "cardnumber": "11111111111111111555556666667777777777",
+      "exp_month": "2",
+      "exp_year": "2022",
+      "amount": "4000000",
+      "id": 10
     }
   ],
   "comments": [
     {
-      "id": 1,
-      "names": "Robert",
-      "email": "Schwartz",
-      "message": "rob23@gmail.com"
+      "names": "shyaka eugene",
+      "email": "shyakae7@gmail.com",
+      "message": " Never underrated",
+      "id": 2
+    },
+    {
+      "names": "chris",
+      "email": "shyakae7@gmail.com",
+      "message": " hhhhhhhhh",
+      "id": 3
+    },
+    {
+      "names": "chris",
+      "email": "shyakae7@gmail.com",
+      "message": " bad marriage is more than a prison thanks guys",
+      "id": 4
+    },
+    {
+      "names": "chris",
+      "email": "chris@gmail.com",
+      "message": " Your articles are amazing",
+      "id": 5
+    },
+    {
+      "names": "Bernard",
+      "email": "benard@gmail.com",
+      "message": " please this article is very beatiful more of this!!!",
+      "id": 6
+    },
+    {
+      "names": "Shema",
+      "email": "shema@gmail.com",
+      "message": " please more articles",
+      "id": 7
+    },
+    {
+      "names": "shyaka ",
+      "email": "shyakae7@gmail.com",
+      "message": " this is beatiful",
+      "id": 8
+    },
+    {
+      "names": "Davis",
+      "email": "davisrutz@gmail.com",
+      "message": " Hello guys i got my message from these articles they are more teaching  thanks",
+      "id": 9
+    },
+    {
+      "names": "Eric ",
+      "email": "Eric@gmail.com",
+      "message": " please  add more information in violence in East africa.",
+      "id": 10
+    }
+  ],
+  "smscontact": [
+    {
+      "names": "shyaka eugene",
+      "phonenumber": "0786653152",
+      "id": 2
     },
     {
       "names": "shyaka eugene",
-      "email": "shyakae7@gmail.com",
-      "message": " yuuyyyjti",
-      "id": 2
+      "phonenumber": "0786653152",
+      "id": 3
+    },
+    {
+      "names": "shyaka eugene",
+      "phonenumber": "0786653152",
+      "id": 4
+    },
+    {
+      "names": "shyaka eugene",
+      "phonenumber": "0786653152",
+      "id": 5
+    },
+    {
+      "names": "shyaka eugene",
+      "phonenumber": "0786653152",
+      "id": 6
     }
   ]
 }

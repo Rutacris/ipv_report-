@@ -39,7 +39,7 @@
             <h3>Admin</h3>
           </li>
           <li>
-            <a href="/dashboard.html">
+            <a href="../dashboard.html">
               <svg>
                 <use xlink:href="#pages"></use>
               </svg>
@@ -76,6 +76,15 @@
                 <use xlink:href="#comments"></use>
               </svg>
               <span>Users</span>
+            </a>
+          </li>
+          <li>
+            
+            <a href="sms.html">
+              <svg>
+                <use xlink:href="#users"></use>
+              </svg>
+              <span>SMS</span>
             </a>
           </li>
           <li>
@@ -161,9 +170,9 @@
       </section>
       
     </section>
-    <script src="js.js"></script>
+    <script src="./js.js"></script>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-    <script src="/js/suggestions.js"></script>
+    <script src="../js/suggestions.js"></script>
     <script>
       fetchSuggestions();
     </script>
@@ -172,7 +181,7 @@
         const isauthenticated = window.localStorage.getItem(`access_token`);
 
         if (!isauthenticated) {
-          window.location.href = "login.html";
+          window.location.href = "/frontend/login.html";
         }
       }
     </script>

@@ -79,6 +79,16 @@
               <span>Users</span>
             </a>
           </li>
+          
+          <li>
+            
+            <a href="admin/sms.html">
+              <svg>
+                <use xlink:href="#users"></use>
+              </svg>
+              <span>SMS</span>
+            </a>
+          </li>
           <li>
             <a href="#0">
               <svg>
@@ -173,7 +183,7 @@
         const isauthenticated = window.localStorage.getItem(`access_token`);
 
         if (!isauthenticated) {
-          window.location.href = "/login.html";
+          window.location.href = "/frontend/login.html";
         }
       }
 

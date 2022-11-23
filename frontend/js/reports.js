@@ -5,7 +5,7 @@ const fetchReports = async () => {
       })
       .then((response) => {
         const reports = response.data;
-        let html_ = "<tr>";
+        let html_ = "";
         Object.keys(reports).forEach(function (value, key) {
           html_ += "<tr>";
           html_ += "<td>" + (key + 1) + "</td>";
@@ -36,6 +36,7 @@ const fetchReports = async () => {
       .then((response) => {
         const addedReports = response.data;
         console.log(`POST: report is added`, addedReports);
+        alert("Your report sent successfully");
       })
       .catch((error) => console.error(error));
   };

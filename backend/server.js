@@ -140,8 +140,8 @@ server.post("/mail/send", (req, res) => {
     host: "smtp.mailtrap.io",
     port: 2525,
     auth: {
-      user: "e147719480cbed",
-      pass: "5ebbac19c27cea",
+      user: "4231986a0e0cb7",
+      pass: "d57350ee803fc0",
     },
   });
   try {
